@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090a0c">
+  <meta name="description" content="Visit NEXLORD ESPORTS, a Free Fire esports team from India. Explore our squad, official jersey, recruitment, practice timings, tournament updates and highlights. One Team. One Vision.">
+  <meta name="robots" content="index, follow">
+  <meta name="googlebot" content="index, follow">
+  <link rel="canonical" href="https://nexlord-esports.github.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="NEXLORD ESPORTS | Free Fire India">
+  <meta property="og:description" content="One Team. One Vision. Explore NEXLORD ESPORTS, our squad, jersey, recruitment and competitive updates.">
+  <meta property="og:url" content="https://nexlord-esports.github.io/">
+  <link rel="icon" type="image/png" href="nexlord-logo.png">
+  <title>NEXLORD ESPORTS | One Team. One Vision.</title>
+  <style>
+    :root{--bg:#090a0c;--panel:#111317;--panel2:#171a20;--gold:#d6a83e;--gold2:#f1d27c;--silver:#d9dce2;--muted:#9da3ad;--line:rgba(214,168,62,.22);--white:#f6f6f7}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:82px}
+    body{margin:0;background:var(--bg);color:var(--white);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.6}
+    a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}
+    .wrap{width:min(1140px,92%);margin:auto}
+    .topline{height:3px;background:linear-gradient(90deg,transparent,var(--gold),#fff, var(--gold),transparent)}
+    header{position:sticky;top:0;z-index:20;background:rgba(8,9,11,.94);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.07)}
+    .nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .brand{display:flex;align-items:center;gap:11px;font-weight:900;letter-spacing:1.3px;font-size:15px}
+    .brand img{width:48px;height:48px;object-fit:contain;border-radius:50%}
+    .brand span{display:block;color:var(--gold);font-size:9px;letter-spacing:3px;margin-top:-4px}
+    .navlinks{display:flex;align-items:center;gap:23px;font-size:12px;font-weight:750;color:#d4d5d8}
+    .navlinks a:hover{color:var(--gold2)}
+    .menu{display:none;background:none;border:1px solid var(--line);color:white;border-radius:8px;padding:8px 11px;font-size:20px}
+    .hero{position:relative;overflow:hidden;min-height:650px;display:grid;align-items:center;border-bottom:1px solid var(--line);background:radial-gradient(ellipse at 75% 45%,rgba(181,132,38,.16),transparent 38%),linear-gradient(120deg,#090a0c 40%,#15171b)}
+    .hero:before{content:"";position:absolute;inset:0;background:linear-gradient(135deg,transparent 55%,rgba(214,168,62,.06) 55.2%,transparent 56%),linear-gradient(135deg,transparent 72%,rgba(255,255,255,.04) 72.2%,transparent 73%);pointer-events:none}
+    .hero-grid{position:relative;display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:40px;padding:70px 0}
+    .eyebrow{color:var(--gold2);font-size:11px;font-weight:850;letter-spacing:4px;text-transform:uppercase}
+    h1{font-size:clamp(42px,7vw,82px);line-height:.98;letter-spacing:-3px;margin:17px 0 14px;font-weight:950}
+    h1 em{font-style:normal;color:var(--gold);display:block}
+    .hero p{max-width:540px;color:#b6bac2;font-size:16px}
+    .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 21px;border-radius:5px;font-size:12px;font-weight:900;letter-spacing:1px;text-transform:uppercase;border:1px solid var(--gold);transition:.2s}
+    .btn.primary{background:linear-gradient(135deg,#f0d17b,#b98622);color:#111;border:0}
+    .btn.secondary{color:var(--white);background:transparent}
+    .btn:hover{transform:translateY(-2px);filter:brightness(1.08)}
+    .hero-logo{display:flex;justify-content:center;align-items:center;position:relative}
+    .hero-logo:before{content:"";position:absolute;width:85%;aspect-ratio:1;border:1px solid rgba(214,168,62,.25);border-radius:50%;box-shadow:0 0 80px rgba(214,168,62,.08)}
+    .hero-logo img{position:relative;width:min(100%,430px);height:auto;object-fit:contain;filter:drop-shadow(0 20px 30px #000)}
+    .hero-foot{display:flex;gap:30px;flex-wrap:wrap;margin-top:42px;color:#8f949d;font-size:10px;letter-spacing:2px;font-weight:800}
+    .hero-foot b{color:#eee}
+    section{padding:88px 0}
+    .section-head{margin-bottom:36px}
+    .kicker{color:var(--gold);font-size:10px;font-weight:900;letter-spacing:3px;text-transform:uppercase}
+    h2{font-size:clamp(29px,4vw,43px);line-height:1.1;margin:8px 0 12px;letter-spacing:-1px}
+    .section-head p,.muted{color:var(--muted);max-width:650px;margin:0}
+    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center}
+    .about-card{padding:32px;background:linear-gradient(145deg,#171a20,#0e1013);border:1px solid var(--line);border-radius:10px}
+    .about-card p{color:#b5bac2}
+    .pillars{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:24px}
+    .pillar{border:1px solid rgba(255,255,255,.08);padding:14px;border-radius:6px;color:#e7e8eb;font-weight:800;font-size:12px}
+    .pillar:before{content:"◆";color:var(--gold);margin-right:9px}
+    .roster{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+    .player{background:linear-gradient(160deg,#191c22,#0e1013);border:1px solid rgba(255,255,255,.09);border-radius:8px;padding:23px 18px;min-height:190px;position:relative;overflow:hidden}
+    .player:after{content:"";position:absolute;width:100px;height:100px;border:1px solid rgba(214,168,62,.17);transform:rotate(45deg);right:-45px;bottom:-45px}
+    .player .num{font-size:11px;color:var(--gold);letter-spacing:2px;font-weight:900}
+    .player h3{font-size:19px;margin:28px 0 2px}
+    .player p{margin:0;color:var(--muted);font-size:12px}
+    .jersey-layout{display:grid;grid-template-columns:1.1fr .9fr;gap:30px;align-items:center}
+    .jersey-image{background:radial-gradient(ellipse,#272a30,#101114 70%);border:1px solid var(--line);border-radius:10px;padding:15px}
+    .jersey-image img{width:100%;height:auto;display:block;border-radius:5px}
+    .jersey-info{padding:15px 0}
+    .jersey-info h3{font-size:25px;margin:10px 0}
+    .jersey-info p{color:var(--muted)}
+    .schedule{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+    .time-card{padding:25px;background:var(--panel);border:1px solid var(--line);border-radius:8px}
+    .time-card small{color:var(--gold);font-weight:900;letter-spacing:2px}
+    .time-card strong{display:block;font-size:clamp(22px,3vw,30px);margin-top:8px}
+    .time-card span{color:var(--muted);font-size:12px}
+    .recruit-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:28px;align-items:start}
+    .recruit-info{padding:28px;background:linear-gradient(145deg,#191b20,#101114);border:1px solid var(--line);border-radius:9px}
+    .role-list{list-style:none;padding:0;margin:22px 0}
+    .role-list li{padding:9px 0;border-bottom:1px solid rgba(255,255,255,.07);color:#d8dbe0;font-size:14px}
+    .role-list li b{color:var(--gold2);float:right}
+    .tag{display:inline-block;border:1px solid var(--line);color:var(--gold2);padding:7px 10px;border-radius:4px;font-size:10px;font-weight:900;letter-spacing:1px;margin:4px 5px 0 0}
+    form{background:var(--panel);border:1px solid rgba(255,255,255,.1);padding:28px;border-radius:9px}
+    .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+    label{display:block;font-size:11px;color:#c7cbd2;font-weight:800;margin-bottom:6px;letter-spacing:.5px}
+    input,select,textarea{width:100%;background:#090b0e;border:1px solid #30343c;border-radius:5px;padding:12px;color:white;outline:none}
+    input:focus,select:focus,textarea:focus{border-color:var(--gold)}
+    .field{margin-bottom:15px}
+    .full{grid-column:1/-1}
+    .hint{font-size:11px;color:var(--muted);margin:12px 0 0}
+    .tournament-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+    .update-card{padding:22px;border:1px solid rgba(255,255,255,.1);background:var(--panel);border-radius:8px}
+    .update-card .status{font-size:9px;letter-spacing:2px;color:var(--gold);font-weight:900}
+    .update-card h3{margin:12px 0 6px;font-size:17px}
+    .update-card p{margin:0;color:var(--muted);font-size:12px}
+    .socials{display:flex;gap:12px;flex-wrap:wrap}
+    .socials a{padding:12px 16px;border:1px solid var(--line);border-radius:5px;font-size:12px;font-weight:800}
+    .socials a:hover{background:rgba(214,168,62,.1);border-color:var(--gold)}
+    .contact-box{display:flex;align-items:center;justify-content:space-between;gap:25px;padding:32px;border:1px solid var(--line);background:linear-gradient(110deg,#191b20,#0d0f12);border-radius:9px}
+    .contact-box p{color:var(--muted);margin:6px 0 0}
+    footer{padding:35px 0;border-top:1px solid rgba(255,255,255,.08);background:#070809}
+    .footer-row{display:flex;justify-content:space-between;gap:20px;align-items:center;flex-wrap:wrap;color:#858b95;font-size:11px}
+    .footer-brand{font-weight:900;color:#eee;letter-spacing:1px}.footer-brand span{color:var(--gold)}
+    .notice{font-size:11px;color:#888;margin-top:10px}
+    @media(max-width:900px){.navlinks{gap:12px;font-size:10px}.hero-grid{grid-template-columns:1fr .75fr}.roster{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:700px){
+      .nav{height:68px}.menu{display:block}.navlinks{display:none;position:absolute;left:0;right:0;top:68px;background:#0b0c0f;padding:18px 5%;border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start;font-size:13px}.navlinks.open{display:flex}
+      .brand img{width:42px;height:42px}.hero{min-height:auto}.hero-grid{grid-template-columns:1fr;text-align:center;padding:55px 0 48px;gap:18px}.hero p{margin:auto}.hero-logo{grid-row:1}.hero-logo img{width:210px}.hero-foot{justify-content:center;margin-top:28px}
+      section{padding:64px 0}.about-grid,.jersey-layout,.recruit-grid{grid-template-columns:1fr}.schedule{grid-template-columns:1fr}.tournament-grid{grid-template-columns:1fr}.contact-box{align-items:flex-start;flex-direction:column}
+    }
+    @media(max-width:430px){h1{letter-spacing:-2px}.roster{grid-template-columns:1fr 1fr;gap:9px}.player{padding:17px 13px;min-height:170px}.player h3{font-size:16px}.form-grid{grid-template-columns:1fr}.full{grid-column:auto}.about-card,form{padding:21px}.pillars{grid-template-columns:1fr 1fr}}
+  </style>
+</head>
+<body>
+  <div class="topline"></div>
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="#home" aria-label="NEXLORD ESPORTS home">
+        <img src="nexlord-logo.png" alt="Official NEXLORD ESPORTS logo">
+        <div>NEXLORD ESPORTS<span>ONE TEAM. ONE VISION.</span></div>
+      </a>
+      <button class="menu" id="menuBtn" aria-label="Open navigation" aria-expanded="false">☰</button>
+      <nav class="navlinks" id="navLinks">
+        <a href="#home">HOME</a><a href="#about">ABOUT</a><a href="#roster">SQUAD</a><a href="#jersey">JERSEY</a><a href="#tournaments">TOURNAMENTS</a><a href="#recruitment">JOIN US</a><a href="#contact">CONTACT</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="wrap hero-grid">
+        <div>
+          <div class="eyebrow">Free Fire India • Competitive Esports</div>
+          <h1>NEXLORD <em>ESPORTS</em></h1>
+          <p>One team. One vision. Built on teamwork, discipline and strategy. We compete to improve, learn and make every decision count.</p>
+          <div class="actions"><a class="btn primary" href="#recruitment">Join the Squad</a><a class="btn secondary" href="#roster">Explore Team</a></div>
+          <div class="hero-foot"><span><b>01</b> TEAMWORK</span><span><b>02</b> DISCIPLINE</span><span><b>03</b> STRATEGY</span></div>
+        </div>
+        <div class="hero-logo"><img src="nexlord-logo.png" alt="NEXLORD ESPORTS official emblem"></div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="wrap about-grid">
+        <div class="section-head"><div class="kicker">Who we are</div><h2>Built to compete.<br>Driven to improve.</h2><p>NEXLORD ESPORTS is a competitive Free Fire India team focused on playing as one unit. Our identity is built around smart teamwork, disciplined practice, strategic thinking and constant improvement.</p></div>
+        <div class="about-card"><div class="kicker">Our standard</div><h3>ONE TEAM. ONE VISION.</h3><p>Every player has a role. Every call matters. We value preparation, communication and the decisions that help a squad perform under pressure.</p><div class="pillars"><div class="pillar">Teamwork</div><div class="pillar">Discipline</div><div class="pillar">Strategy</div><div class="pillar">Growth</div></div></div>
+      </div>
+    </section>
+
+    <section id="roster" style="background:#0d0f12">
+      <div class="wrap">
+        <div class="section-head"><div class="kicker">The players</div><h2>Our Squad</h2><p>Every position has a purpose. We are building a focused squad with clear roles and shared goals.</p></div>
+        <div class="roster">
+          <article class="player"><div class="num">01 / LEAD</div><h3>★BLADE?</h3><p>Team Leader</p></article>
+          <article class="player"><div class="num">02 / OPEN</div><h3>Recruiting</h3><p>Rusher</p></article>
+          <article class="player"><div class="num">03 / OPEN</div><h3>Recruiting</h3><p>Support</p></article>
+          <article class="player"><div class="num">04 / OPEN</div><h3>Recruiting</h3><p>Sniper</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="jersey">
+      <div class="wrap jersey-layout">
+        <div class="jersey-image"><img src="nexlord-jersey.png" alt="Official NEXLORD ESPORTS jersey showing front and back design"></div>
+        <div class="jersey-info"><div class="kicker">Official team wear</div><h2>Wear the identity.</h2><h3>Official NEXLORD Jersey</h3><p>Our black, metallic-gold and silver team jersey. The uploaded official jersey artwork is displayed as provided, with front and back views together.</p><a class="btn primary" href="https://wa.me/919031140474?text=Hello%20NEXLORD%20ESPORTS%2C%20I%20want%20to%20enquire%20about%20the%20official%20jersey." target="_blank" rel="noopener">WhatsApp Enquiry</a></div>
+      </div>
+    </section>
+
+    <section id="schedule" style="background:#0d0f12">
+      <div class="wrap">
+        <div class="section-head"><div class="kicker">Practice availability</div><h2>Online Timing</h2><p>Team availability is shown in Indian Standard Time (IST).</p></div>
+        <div class="schedule">
+          <div class="time-card"><small>SESSION 01</small><strong>4:00 PM – 5:00 PM</strong><span>IST · Daily team availability</span></div>
+          <div class="time-card"><small>SESSION 02</small><strong>8:00 PM – 9:00 PM</strong><span>IST · Daily team availability</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="recruitment">
+      <div class="wrap">
+        <div class="section-head"><div class="kicker">Recruitment open • All India</div><h2>Join NEXLORD</h2><p>Free tryouts. All India players welcome. Apply for an open role using the form.</p></div>
+        <div class="recruit-grid">
+          <div class="recruit-info"><div class="kicker">Open positions</div><h3>Find your role.</h3><ul class="role-list"><li>Rusher <b>2 slots</b></li><li>Support <b>1 slot</b></li><li>Sniper <b>1 slot</b></li></ul><span class="tag">FREE TRYOUTS</span><span class="tag">ALL INDIA</span><p class="notice">Submitting opens WhatsApp with your details filled in. Your application is not stored on this website; review the message and press Send in WhatsApp.</p></div>
+          <form id="applyForm">
+            <div class="form-grid">
+              <div class="field"><label for="ign">IN-GAME NAME *</label><input id="ign" name="ign" required placeholder="Your in-game name"></div>
+              <div class="field"><label for="age">AGE *</label><input id="age" name="age" type="number" min="13" max="99" required placeholder="Your age"></div>
+              <div class="field"><label for="uid">FREE FIRE UID *</label><input id="uid" name="uid" required inputmode="numeric" placeholder="Your UID"></div>
+              <div class="field"><label for="role">PREFERRED ROLE *</label><select id="role" name="role" required><option value="">Select a role</option><option>Rusher</option><option>Support</option><option>Sniper</option></select></div>
+              <div class="field full"><label for="experience">EXPERIENCE LEVEL *</label><select id="experience" name="experience" required><option value="">Select your experience</option><option>Daily Scrims</option><option>Beginner</option><option>Experienced Player</option></select></div>
+              <div class="field full"><label for="contactDetails">WHATSAPP NUMBER *</label><input id="contactDetails" name="contactDetails" type="tel" inputmode="tel" autocomplete="tel" required pattern="[+0-9 ()-]{10,18}" placeholder="Enter your WhatsApp number"><p class="hint">Contact is accepted through WhatsApp number only.</p></div>
+            </div>
+            <button class="btn primary" type="submit">Submit via WhatsApp</button>
+            <p class="hint">WhatsApp will open with a prepared application message. Please check your details and tap Send.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section id="tournaments" style="background:#0d0f12">
+      <div class="wrap">
+        <div class="section-head"><div class="kicker">Competitive updates</div><h2>Tournaments & Results</h2><p>Follow this section for verified team announcements. No unconfirmed wins, statistics or achievements are listed.</p></div>
+        <div class="tournament-grid">
+          <article class="update-card"><div class="status">UPCOMING</div><h3>Tournament announcements</h3><p>Upcoming event details will be posted here when officially confirmed.</p></article>
+          <article class="update-card"><div class="status">MATCH UPDATES</div><h3>Match day information</h3><p>Fixtures and match updates will be shared through our official social channels.</p></article>
+          <article class="update-card"><div class="status">RESULTS</div><h3>Official results</h3><p>Verified results and achievements will be added here after events conclude.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="media">
+      <div class="wrap">
+        <div class="section-head"><div class="kicker">Follow the journey</div><h2>Media & Highlights</h2><p>Watch our content and stay connected with NEXLORD ESPORTS.</p></div>
+        <div class="socials">
+          <a href="https://www.youtube.com/@nexlord.esports" target="_blank" rel="noopener">YouTube ↗</a>
+          <a href="https://instagram.com/nexlord_esports" target="_blank" rel="noopener">Instagram ↗</a>
+          <a href="https://discord.gg/sBaDzSKmE" target="_blank" rel="noopener">Discord ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" style="padding-top:20px">
+      <div class="wrap">
+        <div class="contact-box"><div><div class="kicker">Get in touch</div><h2>Connect with NEXLORD.</h2><p>For recruitment, jersey enquiries and team-related questions.</p><p><strong>WhatsApp:</strong> +91 77650 84357</p></div><a class="btn primary" href="https://wa.me/919031140474" target="_blank" rel="noopener">Chat on WhatsApp</a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="wrap footer-row"><div><div style="display:flex;align-items:center;gap:10px"><img src="nexlord-logo.png" alt="Official NEXLORD ESPORTS logo" style="width:48px;height:48px;object-fit:contain;border-radius:50%"><div><div class="footer-brand">NEXLORD <span>ESPORTS</span></div><div>ONE TEAM. ONE VISION.</div></div></div></div><div>© <span id="year"></span> NEXLORD ESPORTS. All rights reserved.</div><div>Free Fire India · Competitive Esports</div></div></footer>
+
+  <script>
+    const menuBtn = document.getElementById('menuBtn');
+    const navLinks = document.getElementById('navLinks');
+    menuBtn.addEventListener('click', () => {
+      const open = navLinks.classList.toggle('open');
+      menuBtn.setAttribute('aria-expanded', String(open));
+      menuBtn.textContent = open ? '✕' : '☰';
+    });
+    navLinks.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+      navLinks.classList.remove('open');
+      menuBtn.setAttribute('aria-expanded', 'false');
+      menuBtn.textContent = '☰';
+    }));
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    document.getElementById('applyForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+      if (!this.reportValidity()) return;
+      const data = new FormData(this);
+      const message = [
+        'Hello NEXLORD ESPORTS! I want to apply for a team tryout.',
+        '',
+        'In-game Name: ' + data.get('ign'),
+        'Age: ' + data.get('age'),
+        'Free Fire UID: ' + data.get('uid'),
+        'Preferred Role: ' + data.get('role'),
+        'Experience Level: ' + data.get('experience'),
+        'WhatsApp Number: ' + data.get('contactDetails')
+      ].join('\\n');
+      const url = 'https://wa.me/919031140474?text=' + encodeURIComponent(message);
+      window.open(url, '_blank', 'noopener,noreferrer');
+    });
+  </script>
+</body>
+</html>
